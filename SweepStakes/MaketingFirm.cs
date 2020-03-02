@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
-    class MaketingFirm
+    class MaketingFirm : ISweepstakesManager
     {
+        //member variables 
+
+
+
+        //constructor 
+        public MaketingFirm()
+        {
+
+        }
+
+        // member methods 
+        public void CreateSweepstakes()
+        {
+
+        }
+
     }
 }

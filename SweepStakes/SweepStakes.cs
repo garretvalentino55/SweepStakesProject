@@ -8,5 +8,29 @@ namespace SweepStakes
 {
     class SweepStakes
     {
+        // Member Variables 
+        // dictionary
+        Dictionary<int, Contestants> contestants;
+
+
+        // Constructor 
+        public SweepStakes()
+        {
+
+        }
+
+        // Member Methods 
+        public void RegisterContestant()
+        {
+
+        }
+        public Contestants PickWinner()
+        {
+
+        }
+        public void PrintContestantInfo()
+        {
+
+        }
     }
 }
