@@ -9,18 +9,32 @@ namespace SweepStakes
     static class Userinterface
     {
         
+        
    
+      
+        public static string GetFirstName()
+        {
+            Console.WriteLine("Please Enter your First Name");
+            Console.ReadLine();
+            return Console.ReadLine();
+        }
+        public static string GetLastName()
+        {
+            Console.WriteLine("Please Enter your Last Name");
+            Console.ReadLine();
+            return Console.ReadLine();
+        }
+        public static string GetEmailAddress()
+        {
+            Console.WriteLine("Please Enter your Email Address");
+            Console.ReadLine();
+            return Console.ReadLine();
+        }
         public static void GetUserInputFor()
         {
-            Console.WriteLine("Please input your information to apply for the chance to win in our Sweepstakes");
-            Console.WriteLine("Enter your First name");
-            Console.ReadLine();
-            Console.WriteLine("Enter your Last Name");
-            Console.ReadLine();
-            Console.WriteLine("Enter your Email Address");
-            Console.ReadLine();
-
+            GetFirstName();
+            GetLastName();
+            GetEmailAddress();
         }
-
     }
 }

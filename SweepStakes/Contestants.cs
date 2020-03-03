@@ -13,6 +13,7 @@ namespace SweepStakes
         public string lastName { get; set; }
         string emailAddress { get; set; }
         int registrationNumber { get; set; }
+        int newRegistrationNumber;
         int x;
         //constructor 
         public Contestants(string firstname , string lastname)
@@ -25,46 +26,25 @@ namespace SweepStakes
         }
 
 
-
+        public void GetContestantInfo()
+        {
+            firstName = Userinterface.GetFirstName();
+            lastName = Userinterface.GetLastName();
+            emailAddress = Userinterface.GetEmailAddress();
+            SetRegistrationNumber();
+        }
 
         // member methods 
-
-        public string GetFirstName()
-        {
-            Console.WriteLine("Please Enter your First Name");
-            Console.ReadLine();
-            return Console.ReadLine();
-        }
-        public string GetLastName()
-        {
-            Console.WriteLine("Please Enter your Last Name");
-            Console.ReadLine();
-            return Console.ReadLine();
-        }
-        public string GetEmailAddress()
-        {
-            Console.WriteLine("Please Enter your Email Address");
-            Console.ReadLine();
-            return Console.ReadLine();
-        }
         public int SetRegistrationNumber()
         {
-            Random random = new Random();
-            random.Next(1, 10000);
-            int x = random.Next(1, 10000);
-            return x;
+            for (int i = 0; i < registrationNumber; i++)
+            {
+                newRegistrationNumber = i;
 
-
+            }
+            return newRegistrationNumber;
         }
-        public void GetConstestantInfo()
-        {
-            GetFirstName();
-            GetLastName();
-            GetEmailAddress();
-            SetRegistrationNumber();
-            
 
-        }
 
     }
 }
