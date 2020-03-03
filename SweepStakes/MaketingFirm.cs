@@ -15,13 +15,13 @@ namespace SweepStakes
         //constructor 
         public MaketingFirm()
         {
-
+            SweepStakes sweepStakes = new SweepStakes();
         }
 
         // member methods 
         public void CreateSweepstakes()
         {
-
+            
         }
 
     }

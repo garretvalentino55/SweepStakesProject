@@ -28,10 +28,5 @@ namespace SweepStakes
         {
 
         }
-        void Sweepstakes()
-        {
-
-        }
-
     }
 }

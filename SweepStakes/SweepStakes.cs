@@ -19,7 +19,11 @@ namespace SweepStakes
 
         }
 
-        // Member Methods 
+        // Member Method
+        public string Sweepstakes()
+        {
+
+        }
         public void RegisterContestant()
         {
 
