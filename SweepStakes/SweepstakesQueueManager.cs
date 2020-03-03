@@ -21,19 +21,15 @@ namespace SweepStakes
 
         //Member Methods 
 
-        void InsertSweepstakes(SweepStakes sweepStakes)
-        {
 
-        }
-        void GetSweepstakes()
+        public void InsertSweepstakes(SweepStakes sweepStakes)
         {
-
-        }
-        void Sweepstakes()
-        {
-
+            throw new NotImplementedException();
         }
 
-
+        public SweepStakes GetSweepstakes()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
