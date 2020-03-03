@@ -11,8 +11,8 @@ namespace SweepStakes
         // member variables 
         public string firstName { get; set; }
         public string lastName { get; set; }
-        string emailAddress { get; set; }
-        int registrationNumber { get; set; }
+        public string emailAddress { get; set; }
+        public int registrationNumber { get; set; }
         int newRegistrationNumber;
         int x;
         //constructor 

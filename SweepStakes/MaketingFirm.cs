@@ -24,5 +24,14 @@ namespace SweepStakes
             
         }
 
+        public SweepStakes GetSweepstakes()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void InsertSweepstakes(SweepStakes sweepStakes)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
