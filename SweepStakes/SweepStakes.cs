@@ -12,7 +12,7 @@ namespace SweepStakes
         // dictionary
         Dictionary<int, Contestants> newContestants;
         int ContestantCount;
-        int winningContestant;
+        Contestants winningContestant;
         // Constructor 
         public SweepStakes()
         {
@@ -36,9 +36,9 @@ namespace SweepStakes
         
         public void PrintContestantInfo(Contestants contestants)
         {
-            Console.WriteLine(contestants.firstName + contestants.lastName);
-            Console.WriteLine(contestants.emailAddress);
-            Console.WriteLine(contestants.registrationNumber);
+            Console.WriteLine(winningContestant.firstName + winningContestant.lastName);
+            Console.WriteLine(winningContestant.emailAddress);
+            Console.WriteLine(winningContestant.registrationNumber);
         }
     }
 }
