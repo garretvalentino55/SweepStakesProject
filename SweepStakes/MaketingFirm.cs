@@ -6,32 +6,24 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
-    class MaketingFirm : ISweepstakesManager
+    class MaketingFirm 
     {
         //member variables 
-
+        ISweepstakesManager _manager;
 
 
         //constructor 
-        public MaketingFirm()
+        public MaketingFirm(ISweepstakesManager manager)
         {
-            SweepStakes sweepStakes = new SweepStakes();
+            _manager = manager;
         }
 
         // member methods 
         public void CreateSweepstakes()
         {
-            
-        }
+            SweepStakes sweepStakes = new SweepStakes();
+            _manager.InsertSweepstakes(sweepStakes);
 
-        public SweepStakes GetSweepstakes()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void InsertSweepstakes(SweepStakes sweepStakes)
-        {
-            throw new NotImplementedException();
         }
     }
 }
